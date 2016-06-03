@@ -1,0 +1,26 @@
+{
+  "name": "sexxi.xyz",
+  "version": "0.0.0",
+  "description": "A very sexxi website for SEXXIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UWaterlooSE2021/sexxi.xyz.git"
+  },
+  "keywords": [
+    "waterloo",
+    "software",
+    "engineering",
+    "university",
+    "2021"
+  ],
+  "author": "Lawrence Pan <lawrencefeipan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UWaterlooSE2021/sexxi.xyz/issues"
+  },
+  "homepage": "https://github.com/UWaterlooSE2021/sexxi.xyz#readme"
+}
