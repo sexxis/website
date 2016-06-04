@@ -6,10 +6,10 @@ var PATH = path.join(__dirname, '..', 'dist');
 
 var app = express();
 
-app.use('/static', express.static(PATH);
+app.use('/static', express.static(PATH));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(PATH 'index.html'));
+  res.sendFile(path.join(PATH, 'index.html'));
 });
 
 app.listen(PORT, function () {
