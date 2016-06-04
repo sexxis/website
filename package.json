@@ -1,0 +1,35 @@
+{
+  "name": "sexxi.xyz",
+  "version": "0.0.0",
+  "description": "A very sexxi website for SEXXIs",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UWaterlooSE2021/sexxi.xyz.git"
+  },
+  "keywords": [
+    "waterloo",
+    "software",
+    "engineering",
+    "university",
+    "2021"
+  ],
+  "author": "Lawrence Pan <lawrencefeipan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UWaterlooSE2021/sexxi.xyz/issues"
+  },
+  "homepage": "https://github.com/UWaterlooSE2021/sexxi.xyz#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.10",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.7",
+    "gulp-sass": "^2.3.1"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
