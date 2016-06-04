@@ -29,7 +29,7 @@ gulp.task('pug', function () {
 
 gulp.task('sass', function() {
   return gulp.src(PATHS.sass)
-    .pipe(sass())
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
 });
