@@ -9,20 +9,21 @@ var PATHS = {
 };
 
 gulp.task('serve', ['nodemon', 'sass'], function() {
+  browserSync.init({
+    proxy: 'localhost:4200'
+  });
 
-    browserSync.init({
-      proxy: 'localhost:4200'
-    });
-
-    gulp.watch(PATHS.sass, ['sass']);
-    gulp.watch(PATHS.html).on('change', browserSync.reload);
+  gulp.watch(PATHS.sass, ['sass']);
+  gulp.watch(PATHS.html).on('change', browserSync.reload);
 });
 
+gulp.task('build', ['sass']);
+
 gulp.task('sass', function() {
-   return gulp.src(PATHS.sass)
-        .pipe(sass())
-        .pipe(gulp.dest("dist"))
-        .pipe(browserSync.stream());
+  return gulp.src(PATHS.sass)
+    .pipe(sass())
+    .pipe(gulp.dest("dist"))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('nodemon', function () {
