@@ -11,9 +11,12 @@ $ cd sexxi.xyz
 $ npm install # Install all of the dependencies
 $ npm start # Start development servers
 
-# Now you can visit the site on localhost:3000
+# Now you can visit the site on localhost:3000.
 ```
 
-**Note**
-We actually have two dev servers running here. One listens to port 3000 and the other listens to port 4200.
-But you only need the one that listens to 3000.
+### How BrowserSync works
+Our site is actually running off of port 4200. However, when you access port 3000, 
+BrowserSync will proxy it to port 4200, injecting whatever BrowserSync JS to keep things in sync.
+There's also a socket server running on port 3000 for BrowserSync.
+You can also access cool stuff at port 3001.
+
