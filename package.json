@@ -4,7 +4,8 @@
   "description": "A very sexxi website for SEXXIs",
   "main": "index.js",
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
