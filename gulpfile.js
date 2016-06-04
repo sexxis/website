@@ -18,6 +18,10 @@ gulp.task('serve', ['nodemon', 'sass'], function() {
     gulp.watch(PATHS.html).on('change', browserSync.reload);
 });
 
+gulp.task('production', ['sass'], function(){
+    require('./src/server.js');
+})
+
 gulp.task('sass', function() {
    return gulp.src(PATHS.sass)
         .pipe(sass())
