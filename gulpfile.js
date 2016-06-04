@@ -17,9 +17,12 @@ gulp.task('serve', ['nodemon', 'sass'], function() {
   gulp.watch(PATHS.html).on('change', browserSync.reload);
 });
 
-gulp.task('production', ['sass'], function(){
+gulp.task('production', function(){
+  gulp.src(PATHS.sass)
+    .pipe(sass())
+    .pipe(gulp.dest("dist"));
   require('./src/server.js');
-})
+});
 
 gulp.task('sass', function() {
   return gulp.src(PATHS.sass)
