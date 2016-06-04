@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp serve",
+    "start:prod": "sudo systemctl start sexxi.xyz",
     "build": "gulp build"
   },
   "repository": {
