@@ -6,7 +6,9 @@
   "scripts": {
     "start": "gulp serve",
     "start:prod": "sudo systemctl start sexxi.xyz",
-    "build": "gulp build"
+    "build": "gulp build",
+    "pretest": "npm install -g gulp",
+    "test": "gulp lint"
   },
   "repository": {
     "type": "git",
