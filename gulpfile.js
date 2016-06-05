@@ -10,7 +10,7 @@ var sasslint = require('gulp-sass-lint');
 var PATHS = {
   eslint: "**/*.js",
   sass: "src/assets/styles/**/*.sass",
-  pug: "src/views/*.pug",
+  pug: "src/views/*.pug"
 };
 
 gulp.task('serve', ['nodemon', 'sass', 'pug'], function() {
@@ -39,7 +39,7 @@ gulp.task('sass', function() {
 gulp.task('lint', ['eslint', 'puglint', 'sasslint']);
 gulp.task('eslint', function() {
   return gulp.src(PATHS.eslint)
-    .pipe(eslint())
+    .pipe(eslint({configFile: ".eslintrc.json"}))
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 });
@@ -47,7 +47,7 @@ gulp.task('puglint', function() {
   return gulp.src(PATHS.pug)
     .pipe(puglint());
 });
-gulp.task('sasslint', function(){
+gulp.task('sasslint', function() {
   return gulp.src(PATHS.sass)
     .pipe(sasslint())
     .pipe(sasslint.format())
