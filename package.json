@@ -11,6 +11,9 @@
     "lint:sass": "gulp lint-sass",
     "lint:pug": "gulp lint-pug"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UWaterlooSE2021/sexxi.xyz.git"
