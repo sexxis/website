@@ -23,7 +23,7 @@ gulp.task('serve', ['nodemon', 'sass', 'pug'], function() {
 });
 
 gulp.task('build', ['sass', 'pug']);
-gulp.task('pug', function () {
+gulp.task('pug', function() {
   return gulp.src(PATHS.pug)
     .pipe(pug())
     .pipe(gulp.dest('dist'))
@@ -37,13 +37,13 @@ gulp.task('sass', function() {
 });
 
 gulp.task('lint', ['eslint', 'puglint', 'sasslint']);
-gulp.task('eslint', function(){
+gulp.task('eslint', function() {
   return gulp.src(PATHS.eslint)
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 });
-gulp.task('puglint', function(){
+gulp.task('puglint', function() {
   return gulp.src(PATHS.pug)
     .pipe(puglint());
 });
@@ -54,7 +54,7 @@ gulp.task('sasslint', function(){
     .pipe(sasslint.failOnError());
 });
 
-gulp.task('nodemon', function () {
+gulp.task('nodemon', function() {
   nodemon({
     script: './src/server.js'
   });
