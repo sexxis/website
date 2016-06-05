@@ -1,4 +1,7 @@
 {
-    "extends": "google",
-    "installedESLint": true
+  "extends": "google",
+  "installedESLint": true,
+  "rules": {
+    "linebreak-style": 0
+  }
 }
