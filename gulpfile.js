@@ -23,12 +23,14 @@ gulp.task('serve', ['nodemon', 'sass', 'pug'], function() {
 });
 
 gulp.task('build', ['sass', 'pug']);
+
 gulp.task('pug', function() {
   return gulp.src(PATHS.pug)
     .pipe(pug())
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
 });
+
 gulp.task('sass', function() {
   return gulp.src(PATHS.sass)
     .pipe(sass({outputStyle: 'compressed'}))
@@ -36,18 +38,14 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('lint', ['eslint', 'puglint', 'sasslint']);
-gulp.task('eslint', function() {
-  return gulp.src(PATHS.eslint)
-    .pipe(eslint({configFile: ".eslintrc.json"}))
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
-});
-gulp.task('puglint', function() {
+gulp.task('lint', ['lint-pug', 'lint-sass']);
+
+gulp.task('lint-pug', function() {
   return gulp.src(PATHS.pug)
     .pipe(puglint());
 });
-gulp.task('sasslint', function() {
+
+gulp.task('lint-sass', function() {
   return gulp.src(PATHS.sass)
     .pipe(sasslint())
     .pipe(sasslint.format())
