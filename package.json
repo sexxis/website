@@ -10,7 +10,7 @@
     "lint": "gulp lint",
     "lint:sass": "gulp lint-sass",
     "lint:pug": "gulp lint-pug",
-    "test": "npm lint"
+    "test": "npm run lint"
   },
   "pre-commit": [
     "test"
