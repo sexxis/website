@@ -8,8 +8,7 @@ SE XXI: Homepage for Waterloo Software Engineering Class of 2021
 
 #### Installation
 
-* Make sure you have nodejs, npm and git installed (if not, [rtfm](https://google.com))
-* On your command line
+Make sure you have nodejs, npm and git installed. (if not, [rtfm](https://google.com))
 
 ```bash
 $ git clone https://github.com/UWaterlooSE2021/sexxi.xyz/
@@ -22,18 +21,19 @@ $ npm start # Start development servers
 
 #### Lint
 
-If you don't know or not sure about what is linting, please [rtfm](https://google.com)
+Lint makes sure code looks nice.
 
 ```bash
 $ npm run lint # Lint everything
 $ npm run lint:sass # Lint style files (*.sass)
-$ npm run lint:pug # lint templates (*.pug)
+$ npm run lint:pug # Lint templates (*.pug)
 ```
 
 ##### Editor Integration
 
 You need to configure your editor to make it work! We use [pug-lint](https://github.com/pugjs/pug-lint#editor-integration)
-for pugjs templates and [sass-lint](https://github.com/sasstools/sass-lint#ide-integration) for sass! Please rtfm.
+for pugjs templates and [sass-lint](https://github.com/sasstools/sass-lint#ide-integration) for sass; rtfm in those links 
+to get your IDE set up!
 Thanks :smiley:
 
 ##### Git pre-commit hook
