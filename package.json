@@ -9,10 +9,11 @@
     "build": "gulp build",
     "lint": "gulp lint",
     "lint:sass": "gulp lint-sass",
-    "lint:pug": "gulp lint-pug"
+    "lint:pug": "gulp lint-pug",
+    "test": "npm lint"
   },
   "pre-commit": [
-    "lint"
+    "test"
   ],
   "repository": {
     "type": "git",
