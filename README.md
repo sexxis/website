@@ -1,5 +1,9 @@
 # Loo SE 2021
 
+[![Build Status](https://travis-ci.org/UWaterlooSE2021/sexxi.xyz.svg?branch=travis)](https://travis-ci.org/UWaterlooSE2021/sexxi.xyz)
+
+SE XXI: Homepage for Waterloo Software Engineering Class of 2021
+
 ### Developer Setup
 
 #### Installation

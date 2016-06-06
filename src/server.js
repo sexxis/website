@@ -8,10 +8,10 @@ var app = express();
 
 app.use('/static', express.static(PATH));
 
-app.get('/', function (req, res) {
+app.get('/', function(req, res) {
   res.sendFile(path.join(PATH, 'index.html'));
 });
 
-app.listen(PORT, function () {
+app.listen(PORT, function() {
   console.log('Server running on ' + PORT);
 });
