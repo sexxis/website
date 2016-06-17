@@ -25,7 +25,11 @@
     "university",
     "2021"
   ],
-  "author": "Lawrence Pan <lawrencefeipan@gmail.com>",
+  "author": "University of Waterloo Software Engineering Class of 2021",
+  "contributors": [
+    "Lawrence Pan <lawrencefeipan@gmail.com>",
+    "Clive Chan <cc@clive.io>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/UWaterlooSE2021/sexxi.xyz/issues"
