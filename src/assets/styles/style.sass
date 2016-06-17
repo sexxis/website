@@ -1,7 +1,8 @@
 body>header
+  font-family: Arial
   font-size: 1.5vw
-  margin-top: -4.5em
-  padding: 35vh 2em 0
+  margin-top: -4.5em  //Clever trick with fixed margin and percentage padding
+  padding: 33vh 2em 0 // to achieve desired scaling on mobile and desktop
   text-align: center
 
   p
@@ -10,11 +11,13 @@ body>header
 
   h1
     font-size: 12em
-    line-height: 1em
-    margin: 0
+    margin: -0.2em 0 -0.1em
+    padding: 0
 
     .se
       font-weight: 900
 
     .xxi
+      font-family: Georgia
       font-weight: 100
+      font-size: 1.03em //Compensate for Georgia and Arial height difference
