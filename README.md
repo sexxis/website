@@ -6,8 +6,9 @@ SE XXI: Homepage for Waterloo Software Engineering Class of 2021
 
 ### Developer Setup
 
-* Make sure you have nodejs, npm and git installed (if not, [rtfm](https://google.com))
-* On your command line
+#### Installation
+
+Make sure you have nodejs, npm and git installed. (if not, [rtfm](https://google.com))
 
 ```bash
 $ git clone https://github.com/UWaterlooSE2021/sexxi.xyz/
@@ -15,8 +16,29 @@ $ cd sexxi.xyz
 $ npm install # Install all of the dependencies
 $ npm start # Start development servers
 
-# Now you can visit the site on localhost:3000.
+# Now you can visit the site at localhost:3000.
 ```
+
+#### Lint
+
+Lint makes sure code looks nice.
+
+```bash
+$ npm run lint # Lint everything
+$ npm run lint:sass # Lint style files (*.sass)
+$ npm run lint:pug # Lint templates (*.pug)
+```
+
+##### Editor Integration
+
+You need to configure your editor to make it work! We use [pug-lint](https://github.com/pugjs/pug-lint#editor-integration)
+for pugjs templates and [sass-lint](https://github.com/sasstools/sass-lint#ide-integration) for sass; rtfm in those links 
+to get your IDE set up!
+Thanks :smiley:
+
+##### Git pre-commit hook
+
+Before you hit `git commit -m 'my awesome commit'`, our linter will lint all of the source files. If it detects any errors, your commit will be aborted and you won't be able to contribute to this awesome project. :smiley:
 
 ### How BrowserSync works
 Our site is actually running off of port 4200. However, when you access port 3000, 
