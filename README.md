@@ -1,6 +1,7 @@
 # Loo SE 2021
 
 [![Build Status](https://travis-ci.org/sexxis/website.svg?branch=travis)](https://travis-ci.org/sexxis/website)
+[![bitHound Overall Score](https://www.bithound.io/github/sexxis/website/badges/score.svg)](https://www.bithound.io/github/sexxis/website)
 
 SE XXI: Homepage for Waterloo Software Engineering Class of 2021
 
