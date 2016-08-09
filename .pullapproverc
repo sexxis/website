@@ -1,0 +1,9 @@
+approve_by_comment: true
+approve_regex: lgtm
+reset_on_push: true
+reviewers:
+  members:
+  - cchan
+  - lpan
+  name: pullapprove
+  required: 1
