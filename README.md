@@ -19,6 +19,18 @@ $ npm start # Start development servers
 # Now you can visit the site at localhost:3000.
 ```
 
+#### Making changes
+
+```bash
+$ git checkout -b name-of-branch
+... make your changes ...
+$ git add -A
+$ git commit -m "some descriptive message"
+... repeat if necessary
+$ git push -u origin name-of-branch
+```
+Then create a pull request with that branch.
+
 #### Lint
 
 Lint makes sure code looks nice.
@@ -36,7 +48,7 @@ for pugjs templates and [sass-lint](https://github.com/sasstools/sass-lint#ide-i
 to get your IDE set up!
 Thanks :smiley:
 
-##### Git pre-commit hook
+##### Git pre-commit hook (if you set it up)
 
 Before you hit `git commit -m 'my awesome commit'`, our linter will lint all of the source files. If it detects any errors, your commit will be aborted and you won't be able to contribute to this awesome project. :smiley:
 
