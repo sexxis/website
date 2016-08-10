@@ -1,6 +1,7 @@
 # Loo SE 2021
 
-[![Build Status](https://travis-ci.org/UWaterlooSE2021/sexxi.xyz.svg?branch=travis)](https://travis-ci.org/UWaterlooSE2021/sexxi.xyz)
+[![Build Status](https://travis-ci.org/sexxis/website.svg?branch=travis)](https://travis-ci.org/sexxis/website)
+[![bitHound Overall Score](https://www.bithound.io/github/sexxis/website/badges/score.svg)](https://www.bithound.io/github/sexxis/website)
 
 SE XXI: Homepage for Waterloo Software Engineering Class of 2021
 
@@ -13,8 +14,8 @@ This website is partially an actual homepage for the class, but since those thin
 Make sure you have nodejs, npm and git installed. (if not, [rtfm](https://google.com))
 
 ```bash
-$ git clone https://github.com/UWaterlooSE2021/sexxi.xyz/
-$ cd sexxi.xyz
+$ git clone https://github.com/sexxis/website sexxi
+$ cd sexxi
 $ npm install # Install all of the dependencies
 $ npm start # Start development servers
 
