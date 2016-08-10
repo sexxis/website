@@ -1,17 +1,21 @@
-var express = require('express');
-var path = require('path');
+const express = require('express');
+const path = require('path');
 
-var PORT = 4200;
-var PATH = path.join(__dirname, '..', 'dist');
+const PORT = 4200;
+const PATH = path.join(__dirname, '..', 'dist');
+const BOOTSTRAP_PATH = path.join(
+    __dirname, '..', 'node_modules', 'bootstrap', 'dist'
+);
 
 var app = express();
 
 app.use('/static', express.static(PATH));
+app.use('/bootstrap', express.static(BOOTSTRAP_PATH));
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   res.sendFile(path.join(PATH, 'index.html'));
 });
 
-app.listen(PORT, function() {
-  console.log('Server running on ' + PORT);
+app.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`);
 });
