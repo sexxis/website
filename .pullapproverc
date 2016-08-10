@@ -1,5 +1,5 @@
 approve_by_comment: true
-approve_regex: lgtm
+approve_regex: '^(lgtm|:shipit:|:\+1:)'
 reset_on_push: true
 reviewers:
   members:
