@@ -93,3 +93,4 @@ QA and code review is enforced! Much love.
 - CloudFlare (for DNS, DDOS protection, CDN network)
 - Mailgun (for MX and SMTP)
 - Amazon EC2 running Amazon Linux AMI
+  - https://github.com/cchan/sexxi-wrapper
