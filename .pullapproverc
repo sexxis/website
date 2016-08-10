@@ -1,0 +1,9 @@
+approve_by_comment: true
+approve_regex: '^(lgtm|:shipit:|:\+1:|ayy ?lmao|([gG]od bless|[tT]hank|[dD]ank|[tT]hx) [mM]r\.? [gG]oose)'
+reset_on_push: true
+reviewers:
+  members:
+  - cchan
+  - lpan
+  name: pullapprove
+  required: 1
