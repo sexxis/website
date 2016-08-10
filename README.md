@@ -85,6 +85,7 @@ QA and code review is enforced! Much love.
 - PullApprove
 - Greenkeeper
 - Travis CI
+- BitHound
 
 ##### Infrastructure (not directly accessible by you all, but you're welcome to duplicate it)
 - Namecheap
