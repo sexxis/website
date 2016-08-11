@@ -6,14 +6,16 @@ var pug = require('gulp-pug');
 var puglint = require('gulp-pug-lint');
 var sass = require('gulp-sass');
 var sasslint = require('gulp-sass-lint');
+var concat = require('gulp-concat');
 
 var PATHS = {
   eslint: "**/*.js",
   sass: "src/assets/styles/**/*.sass",
-  pug: "src/views/*.pug"
+  pug: "src/views/*.pug",
+  bootstrap: "./node_modules/bootstrap/dist/css/bootstrap.css"
 };
 
-gulp.task('serve', ['nodemon', 'sass', 'pug'], function() {
+gulp.task('serve', ['nodemon', 'sass', 'pug'], () => {
   browserSync.init({
     proxy: 'localhost:4200'
   });
@@ -32,8 +34,9 @@ gulp.task('pug', function() {
 });
 
 gulp.task('sass', function() {
-  return gulp.src(PATHS.sass)
+  return gulp.src([PATHS.sass, PATHS.bootstrap])
     .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(concat('style.css'))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
 });
