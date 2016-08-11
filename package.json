@@ -38,6 +38,7 @@
   "devDependencies": {
     "browser-sync": "^2.12.10",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
     "gulp-eslint": "^3.0.1",
     "gulp-nodemon": "^2.0.7",
     "gulp-pug": "^3.0.3",
