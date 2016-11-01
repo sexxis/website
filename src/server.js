@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(PATH, 'index.html'));
 });
 
+app.get('/talks', (req, res) => {
+  res.redirect('https://docs.google.com/document/d/1TRr4wxsQMiL1ku8THGHOGjuUghSnLXEJlOPM05fQXs4/edit');
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
