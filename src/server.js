@@ -12,7 +12,9 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(PATH, 'index.html'));
 });
 
+let i = 0;
 app.get('/talks', (req, res) => {
+  console.log(++i, new Date(), req.ip);
   res.redirect('https://docs.google.com/document/d/1TRr4wxsQMiL1ku8THGHOGjuUghSnLXEJlOPM05fQXs4/edit');
 });
 
