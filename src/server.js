@@ -6,6 +6,8 @@ const PATH = path.join(__dirname, '..', 'dist');
 
 const app = express();
 
+app.enable('trust proxy');
+
 app.use('/static', express.static(PATH));
 
 app.get('/', (req, res) => {
