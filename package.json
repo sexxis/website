@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/sexxis/website#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.2",
+    "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^3.0.1",
